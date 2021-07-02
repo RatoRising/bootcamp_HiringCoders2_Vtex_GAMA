@@ -28,5 +28,13 @@ Confira também esse [painel ilustrativo](https://drive.google.com/file/d/1bfn9P
 
 Resposta inserida no sistema.
 
+Painel orientação
+
+https://github.com/RatoRising/bootcamp_HiringCoders2_Vtex_GAMA/blob/main/assignments/Estilos%20de%20Aprendizado%20-%20Painel.png
+
+Resultado - Auditivo
+
+https://github.com/RatoRising/bootcamp_HiringCoders2_Vtex_GAMA/blob/main/assignments/Estilos%20de%20Aprendizado%20-%20Auditivo.PNG
+
 
 
