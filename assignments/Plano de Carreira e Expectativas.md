@@ -1,4 +1,4 @@
-# Plano de Careira e Expectativas
+# Plano de Carreira e Expectativas
 
 **E aiiii, pessoas!**  
 
