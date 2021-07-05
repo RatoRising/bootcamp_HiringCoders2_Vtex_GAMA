@@ -62,11 +62,6 @@ a {
     text-decoration: none;
 }
 
-li:hover {
-    color: #8C52E5;
-    transition: .5s;
-}
-
 a:hover {
     color: #8C52E5;
     transition: .5s;
