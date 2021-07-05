@@ -7,6 +7,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
     <link rel="stylesheet" href="estilos/estilos.css">
+    <style>
+        .mae {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            max-height: 200px;
+            align-items: center;
+        }
+
+        .filha {
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+        }
+
+        .flex-basis {
+            width: 500px;
+            display: flex;
+            border: 1px solid red;
+        }
+
+        .child-basis1 {
+            border: 1px solid black;
+            flex-basis: 100px;
+        }
+
+        .child-basis2 {
+            border: 1px solid black;
+            flex-basis: 200px;
+        }
+
+        .flex-grow {
+            width: 500px;
+            display: flex;
+            border: 1px solid red;
+        }
+
+        .child-grow1 {
+            border: 1px solid black;
+            flex-basis: 100px;
+            flex-grow: 2;
+        }
+
+        .child-grow2 {
+            border: 1px solid black;
+            flex-basis: 100px;
+            flex-grow: 1;
+        }
+
+        .flex-shrink {
+            width: 500px;
+            display: flex;
+            border: 1px solid red;
+        }
+
+        .child-shrink1 {
+            border: 1px solid black;
+            flex-basis: 300px;
+            flex-shrink: 2;
+        }
+
+        .child-shrink2 {
+            border: 1px solid black;
+            flex-basis: 300px;
+            flex-shrink: 1;
+        }
+
+
+
+        .my-div {
+            background-color: green;
+            height: 20px;
+        }
+
+        @media (max-width: 600px) and (min-width: 500px) {
+            .my-div {
+                background-color: red;
+            }
+
+            .my-p {
+                color: white;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -34,12 +118,151 @@
             <li>Especificidade de Seletores CSS</li>
             <li>Utilizando CSS no HTML</li>
             <li>Media Queries</li>
-            <li>Prática de CSS</li>
-            <li>Prática: Flexbox</li>
-            <li>Prática: Media Query</li>
+            <li><a href="exercícios/pratica_css.html" target="_blank">Prática de CSS</a></li>
+            <li><a href="exercícios/pratica_flexbox.html" target="_blank">Prática: Flexbox</a></li>
+            <li><a href="exercícios/pratica_media_query.html" target="_blank">Prática: Media Query</a></li>
         </ul>
     </div>
+
+    <h2>TESTANDO ALGUMAS PROPRIEDADES</h2>
+    <div>
+        <div id="Flexbox: align e justify">
+            <h3>Flexbox: align e justify</h3>
+            <pre>
+                &lt;style>
+                    .mae {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        max-height: 200px;
+                        align-items: center;
+                    }
+                    .filha {
+                        height: 50px;
+                        width: 50px;
+                        border: 1px solid black;
+                    }
+                </style>
+            </pre>
+            <div class="mae">
+                <div class="filha">Div 1</div>
+                <div class="filha">Div 2</div>
+                <div class="filha">Div 3</div>
+                <div class="filha">Div 1</div>
+                <div class="filha">Div 2</div>
+                <div class="filha">Div 3</div>
+                <div class="filha">Div 1</div>
+                <div class="filha">Div 2</div>
+                <div class="filha">Div 3</div>
+                <div class="filha">Div 1</div>
+                <div class="filha">Div 2</div>
+                <div class="filha">Div 3</div>
+            </div>
+        </div>
+        <div id="flex-basis">
+            <h3>flex-basis</h3>
+            <p>Esta propriedade define a largura inicial que um deverá ter. No exemplo abaixo, 100px para a Div1 e 200px
+                para a Div2, desta forma, a largura do item pai (500px) não é utilizada por completo.</p>
+            <pre>
+                &lt;style>
+                    .flex-basis {
+                        width: 500px;
+                        display: flex;
+                        border: 1px solid red;
+                    }
+            
+                    .child-basis1 {
+                        border: 1px solid black;
+                        flex-basis: 100px;
+                    }
+            
+                    .child-basis2 {
+                        border: 1px solid black;
+                        flex-basis: 200px;
+                    }
+            </style>
+            </pre>
+            <div class="flex-basis">
+                <div class="child-basis1">Div 1</div>
+                <div class="child-basis2">Div 2</div>
+
+            </div>
+        </div>
+        <div id="Flex-grow">
+            <h3>Flex-grow</h3>
+            <p>Esta propriedade fraciona a sobra do valor do pai e distribui de acordo com as partes indicadas para cada
+                filho para que seja ocupada a largura total do item pai, nesse exemplo, pai = 500px, filho 1 = 100px e
+                filho 2 = 100px, logo a sobra é igual a 300px, que será divida por 3 e atribuída 2 partes ao filho 1
+                (200px) e 1 parte ao filho 2 (100px).</p>
+            <pre>
+                &lt;style>
+                    .flex-grow {
+                        width: 500px;
+                        display: flex;
+                        border: 1px solid red;
+                    }
+            
+                    .child-grow1 {
+                        border: 1px solid black;
+                        flex-basis: 100px;
+                        flex-grow: 2;
+                    }
+            
+                    .child-grow2 {
+                        border: 1px solid black;
+                        flex-basis: 100px;
+                        flex-grow: 1;
+                    }
+                </style>
+            </pre>
+            <div class="flex-grow">
+                <div class="child-grow1">Div 1</div>
+                <div class="child-grow2">Div 2</div>
+            </div>
+        </div>
+        <div id="Flex-shrink">
+            <h3>Flex-shrink</h3>
+            <p>Esta propriedade fraciona o valor ultrapassado do valor do pai e distribui de acordo com as partes
+                indicadas para cada filho para que seja ocupada a largura total do item pai sem que o ultrapasse, nesse
+                exemplo, pai = 500px, filho 1 = 300px e filho 2 = 300px, logo a sobra é igual a 600px, que será divida
+                por 3 e atribuída 2 partes ao filho 1 (200px) e 1 parte ao filho 2 (100px).</p>
+            <pre>
+                &lt;style>
+                </style>
+            </pre>
+            <div class="flex-shrink">
+                <div class="child-shrink1">Div 1</div>
+                <div class="child-shrink2">Div 2</div>
+            </div>
+        </div>
+        <div id="media-query">
+            <h3>Media Query</h3>
+            <p>Um pequeno teste do funcionamento do comando media-query. No comando abaixo foi definido que a cor de
+                fundo da div irá mudar de verde para vermelha e a cor do parágrafo irá mudar para branca, caso a tela
+                fique no tamanho entre 500px e 600px.</p>
+            <pre>
+                &lt;style>
+                    .my-div {
+                        background-color: green;
+                        height: 20px;
+                    }
+                    @media (max-width: 600px) and (min-width: 500px) {
+                        .my-div {
+                            background-color: red;
+                        }
+                        
+                        .my-p {
+                            color: white;
+                        }
+                    }
+                </style>
+            </pre>
+            <div class="my-div">
+                <p class="my-p">Faça o teste reduzindo o tamanho da tela para os valores indicados.</p>
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>
