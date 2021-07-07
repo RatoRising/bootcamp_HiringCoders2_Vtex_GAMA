@@ -57,7 +57,7 @@ li:hover {
     transition: .5s;
 }
 .interli {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 a {
@@ -68,6 +68,11 @@ a {
 a:hover {
     color: #8C52E5;
     transition: .5s;
+}
+
+pre {
+    color: #8C52E5;
+    color: white;
 }
 
 @media (max-width: 1005px) {

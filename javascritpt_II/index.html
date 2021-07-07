@@ -25,10 +25,127 @@
             <li>Revisão JavaScript Básico</li>
             <li>Template String</li>
             <li>Operador Ternário</li>
+            <pre>
+            function menorMaior() {
+                let idade = 18
+                return idade >=18 ? "Maior de idade" : "Menor de idade"
+            }
+            console.log(menorMaior())
+            </pre>
             <li>Arrow Functions</li>
+            <pre>
+            // Inserir parênteses quando houver 2 ou mais parâmetos
+            const soma = (num1, num2) => num1 + num2
+            console.log(soma(5, 10))
+            
+            // Dispensa parênteses quando há apenas 1 parâmetro
+            const sayHello = name => `Hello ${name}`
+            console.log(sayHello('Mouse'))
+            </pre>
             <li>Arrays, Spread & Métodos</li>
+            <ul class="interli">
+                <li> Array</li>
+                <pre>
+        const alunasGama = ["Paula", "Maria", "Estrela", "Clara"]
+        console.log(alunasGama[1])
+                </pre>
+                <li>Operador spread</li>
+                <pre>
+        const alunasXP = [...alunasGama, "Simara"]
+        console.log(alunasXP)
+                </pre>
+                <li>Map</li>
+                <pre>
+        alunasXP.map(aluna => console.log(aluna))
+                </pre>
+                <li>Filter - Números pares</li>
+                <pre>
+        const numeros = [34, 45, 67, 90, 55, 76]
+        const numImpar = numeros.filter(numero => numero % 2 !== 0)
+        console.log(numImpar)
+                </pre>
+                <li>Find</li>
+                <pre>
+        const produtos = ["geladeira", "fogão", "cama", "mesa"]
+        const resultado = produtos.find(produto => produto === "mesa")
+        console.log(resultado)
+                </pre>
+                <li>Sort</li>
+                <pre>
+        const numerosTab = [34, 45, 67, 90, 55, 76]
+        const numOrdCres = numerosTab.sort()
+        console.log(numOrdCres)
+        const numOrdDecres = numerosTab.sort((a,b) => b-a)
+        console.log(numOrdDecres)
+                </pre>
+                <li>Reduce - Reduz o array a um resultado de uma operação matemática</li>
+                <pre>
+        const numbers = [1, 34, 35]
+        const soma = numbers.reduce((valorAnterior, valorAtual) => {
+        return valorAnterior + valorAtual
+        }, 20)
+        console.log(soma)
+                </pre>
+            </ul>
             <li>Objetos Destructuring</li>
-            <li>SPA, PWA E Webcomponents</li>
+            <pre>
+            const pessoa = {
+            nome: "Rato",
+            idade: 39,
+            altura: 1.70,
+            cidade: "São Paulo"
+            }
+            </pre>
+            <ul class="interli">
+                <li>Notação de ponto</li>
+                <pre>
+        console.log(pessoa.nome)
+            </pre>
+                <li>Notação de colchetes</li>
+                <pre>
+        console.log(`${pessoa.nome} tem ${pessoa['idade']} anos.`)
+                </pre>
+                <li>Destructuring - Objetos Arrays</li>
+                <pre>
+        const {nome, idade, altura, cidade} = pessoa
+        console.log(`${nome} nasceu em ${cidade}.`)
+                </pre>
+            </ul>
+            <ul class="interli">
+                <li>Array</li>
+                <pre>
+        const filmes = [
+        {
+        id: 1,
+        titulo: "Aprendendo a programar",
+        descricao: "Aprendendo tudo direitinho para ser bom 1",
+        duracao: 90
+        },
+        {
+        id: 2,
+        titulo: "Aprendendo a programar 2",
+        descricao: "Aprendendo tudo direitinho para ser bom 2",
+        duracao: 30
+        },
+        {
+        id: 3,
+        titulo: "Aprendendo a programar 3",
+        descricao: "Aprendendo tudo direitinho para ser bom 3",
+        duracao: 60
+        }
+        ]
+                </pre>
+                <li>Desestruturando o objeto array</li>
+                <pre>
+        const [{id, titulo, descricao, duracao}] = filmes
+        console.log(titulo)
+
+        // console.log(filmes[1]) - Retorna todas as informações do índice indicado
+        
+        filmes.map(filme => console.log(filme.descricao))
+            </pre>
+            </ul>
+            <li>Single Page Application, Progressive Web Application e Webcomponents</li>
             <li>Projeto</li>
         </ul>
     </div>
