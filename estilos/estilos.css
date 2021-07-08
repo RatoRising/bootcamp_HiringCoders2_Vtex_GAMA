@@ -22,7 +22,6 @@ body {
 
 p {
     margin: 15px;
-
 }
 
 h1 {
@@ -41,7 +40,7 @@ h2 {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     color: #8C52E5;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding: 30px;
     text-align: center;
     text-transform: uppercase;
@@ -56,6 +55,28 @@ h3 {
     padding: 15px;
     text-transform: uppercase;
 }
+
+a::selection,
+p::selection,
+li::selection {
+    background: #8C52E5;
+    color: white;
+  }
+
+  h1::selection {
+    background: black;
+    color: white;
+  }
+
+  h2::selection {
+    background: black;
+    color: white;
+  }
+
+  h3::selection {
+    background: #8C52E5;
+    color: white;
+  }
 
 li {
     margin: 10px;
@@ -78,6 +99,12 @@ a:hover {
 }
 
 /* Classe criada para inserir quando as atividades de um tópico estiverem todas concluídas */
+
+.concluído{
+    color: white;
+}
+
+
 .concluído li {
     color: white;
 }
@@ -103,7 +130,7 @@ a:hover {
     
     h2 {
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         padding: 30px;
 
     }

@@ -47,6 +47,23 @@ h2 {
     text-transform: uppercase;
 }
 
+a::selection,
+p::selection,
+li::selection {
+    background: #8C52E5;
+    color: white;
+  }
+
+  h1::selection {
+    background: black;
+    color: white;
+  }
+
+  h2::selection {
+    background: black;
+    color: white;
+  }
+
 li {
     margin: 10px;
     margin-left: 50px;
@@ -56,7 +73,8 @@ li:hover {
     color: #8C52E5;
     transition: .5s;
 }
-.interli {
+
+.subli {
     margin-left: 40px;
 }
 
@@ -71,7 +89,6 @@ a:hover {
 }
 
 pre {
-    color: #8C52E5;
     color: white;
 }
 
@@ -130,6 +147,20 @@ pre {
         margin-top: 35px;
         margin-bottom: 20px;
     }
+
+    li {
+        margin: 5px;
+        margin-left: 25px;
+    }
+
+    .subli {
+        margin-left: 25px;
+    }
+
+    pre {
+        color: white;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 500px) {
@@ -164,5 +195,9 @@ pre {
     li {
         margin: 5px;
         margin-left: 25px;
+    }
+
+    .subli {
+        margin-left: 15px;
     }
 }

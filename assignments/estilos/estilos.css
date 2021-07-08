@@ -62,6 +62,34 @@ h3 {
     text-transform: uppercase;
 }
 
+h4::selection {
+background: rgb(50, 200, 250);
+
+}
+
+strong::selection,
+a::selection,
+p::selection,
+li::selection {
+    background: #8C52E5;
+    color: white;
+  }
+
+  h1::selection {
+    background: black;
+    color: white;
+  }
+
+  h2::selection {
+    background: black;
+    color: white;
+  }
+
+  h3::selection {
+    background: #8C52E5;
+    color: white;
+  }
+  
 li {
     margin: 10px;
     margin-left: 50px;

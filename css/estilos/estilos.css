@@ -11,7 +11,7 @@ body {
     background-color: #6BD163;
     color: black;
     font-family: 'Raleway', sans-serif;
-    font-size: 1px;
+    font-size: 16px;
     line-height: 1.3em;
     margin: auto;
     margin-bottom: 100px;
@@ -55,6 +55,28 @@ h3 {
     padding: 15px;
     text-transform: uppercase;
 }
+
+a::selection,
+p::selection,
+li::selection {
+    background: #8C52E5;
+    color: white;
+  }
+
+  h1::selection {
+    background: black;
+    color: white;
+  }
+
+  h2::selection {
+    background: black;
+    color: white;
+  }
+
+  h3::selection {
+    background: #8C52E5;
+    color: white;
+  }
 
 li {
     margin: 10px;

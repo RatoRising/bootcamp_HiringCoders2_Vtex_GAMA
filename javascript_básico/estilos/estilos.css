@@ -47,6 +47,23 @@ h2 {
     text-transform: uppercase;
 }
 
+a::selection,
+p::selection,
+li::selection {
+    background: #8C52E5;
+    color: white;
+  }
+
+  h1::selection {
+    background: black;
+    color: white;
+  }
+
+  h2::selection {
+    background: black;
+    color: white;
+  }
+
 li {
     margin: 10px;
     margin-left: 50px;
