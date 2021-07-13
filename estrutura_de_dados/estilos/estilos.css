@@ -22,6 +22,7 @@ body {
 
 p {
     margin: 15px;
+
 }
 
 h1 {
@@ -40,20 +41,9 @@ h2 {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     color: #8C52E5;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 30px;
     text-align: center;
-    text-transform: uppercase;
-    scroll-behavior: smooth;
-}
-
-h3 {
-    background-color: black;
-    color: white;
-    font-size: 1.2em;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    padding: 15px;
     text-transform: uppercase;
 }
 
@@ -74,11 +64,6 @@ li::selection {
     color: white;
   }
 
-  h3::selection {
-    background: #8C52E5;
-    color: white;
-  }
-
 li {
     margin: 10px;
     margin-left: 50px;
@@ -87,6 +72,10 @@ li {
 li:hover {
     color: #8C52E5;
     transition: .5s;
+}
+
+.subli {
+    margin-left: 40px;
 }
 
 a {
@@ -99,20 +88,8 @@ a:hover {
     transition: .5s;
 }
 
-/* Classe criada para inserir quando as atividades de um tópico estiverem todas concluídas */
-
-.concluído{
+pre {
     color: white;
-}
-
-
-.concluído li {
-    color: white;
-}
-
-.concluído li:hover {
-    color: #8C52E5;
-    transition: .5s;
 }
 
 @media (max-width: 1005px) {
@@ -131,7 +108,7 @@ a:hover {
     
     h2 {
         margin-top: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         padding: 30px;
 
     }
@@ -170,6 +147,20 @@ a:hover {
         margin-top: 35px;
         margin-bottom: 20px;
     }
+
+    li {
+        margin: 5px;
+        margin-left: 25px;
+    }
+
+    .subli {
+        margin-left: 25px;
+    }
+
+    pre {
+        color: white;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 500px) {
@@ -204,5 +195,9 @@ a:hover {
     li {
         margin: 5px;
         margin-left: 25px;
+    }
+
+    .subli {
+        margin-left: 15px;
     }
 }
