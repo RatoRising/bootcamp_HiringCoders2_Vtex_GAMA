@@ -6,19 +6,19 @@
 // Se não for divisível por 3 e nem por 5 = "Retorna ele mesmo" - OK
 
 // Minha solução
-var entrada = ""
+var entrada = ''
 
 function fizzBuzz() {
     if (typeof entrada !== "number") {
         return "Não é um número"
     } else if (entrada % 3 === 0 && entrada % 5 === 0) {
-        console.log("FizzBuzz")
+        return "FizzBuzz"
     } else if (entrada % 3 !== 0 && entrada % 5 !== 0) {
-        console.log(entrada)
+        return entrada
     } else if (entrada % 3 === 0) {
-        console.log("Fizz")
+        return "Fizz"
     } else if (entrada % 5 === 0) {
-        console.log("Buzz")
+        return "Buzz"
     }
 }
 console.log(fizzBuzz())
