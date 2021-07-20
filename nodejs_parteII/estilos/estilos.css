@@ -47,15 +47,6 @@ h2 {
     text-transform: uppercase;
 }
 
-h3 {
-    background-color: black;
-    color: white;
-    font-size: 1.2em;
-    margin-top: 50px;
-    padding: 15px;
-    text-transform: uppercase;
-}
-
 a::selection,
 p::selection,
 li::selection {
@@ -73,11 +64,6 @@ h2::selection {
     color: white;
 }
 
-h3::selection {
-    background: #8C52E5;
-    color: white;
-}
-
 li {
     margin: 10px;
     margin-left: 50px;
@@ -86,6 +72,10 @@ li {
 li:hover {
     color: #8C52E5;
     transition: .5s;
+}
+
+.subli {
+    margin-left: 20px;
 }
 
 a {

@@ -52,17 +52,17 @@ p::selection,
 li::selection {
     background: #8C52E5;
     color: white;
-  }
+}
 
-  h1::selection {
+h1::selection {
     background: black;
     color: white;
-  }
+}
 
-  h2::selection {
+h2::selection {
     background: black;
     color: white;
-  }
+}
 
 li {
     margin: 10px;
@@ -97,14 +97,14 @@ a:hover {
         margin-top: 20px;
         padding: 30px;
     }
-    
+
     h2 {
         margin-top: 50px;
         margin-bottom: 50px;
         padding: 30px;
 
     }
-    
+
     h3 {
         font-size: 1.2em;
         margin-top: 50px;
@@ -126,14 +126,14 @@ a:hover {
         margin-top: 15px;
         padding: 20px;
     }
-    
+
     h2 {
         font-size: 1.3em;
         margin-top: 35px;
         margin-bottom: 35px;
         padding: 20px;
     }
-    
+
     h3 {
         font-size: 1.3em;
         margin-top: 35px;

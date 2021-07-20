@@ -67,7 +67,7 @@ input:hover {
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
     font-weight: bold;
-    width: 100px;
+    width: 200px;
     margin: 5px auto;
 }
 
@@ -85,6 +85,8 @@ input:hover {
     height: 80px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
+    margin-top: 80px;
+    bottom: 0;
 }
 
 #rdev {
@@ -100,7 +102,7 @@ input:hover {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    
+
     .sessao1 img {
         width: 60%;
     }
@@ -114,7 +116,7 @@ input:hover {
         text-align: center;
         margin-bottom: 100px;
     }
-    
+
     .sessao2txt {
         font-size: 50px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -134,12 +136,13 @@ input:hover {
     .sessao1 img {
         width: 80%;
     }
-        
+
     .sessao2 {
         height: 80vh;
         padding-top: 100px;
         margin-bottom: 50px;
     }
+
     .sessao2txt {
         font-size: 25px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -152,7 +155,7 @@ input:hover {
         font-size: 25px;
         margin-bottom: 80px;
     }
-    
+
     input {
         font-size: 12px;
     }
@@ -168,4 +171,3 @@ input:hover {
     }
 
 }
-

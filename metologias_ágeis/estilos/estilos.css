@@ -76,19 +76,19 @@ p::selection,
 li::selection {
     background: #8C52E5;
     color: white;
-  }
+}
 
-  h1::selection,
-  h2::selection,
-  h4::selection {
+h1::selection,
+h2::selection,
+h4::selection {
     background: black;
     color: white;
-  }
+}
 
-  h3::selection {
+h3::selection {
     background: #8C52E5;
     color: white;
-  }
+}
 
 li {
     margin: 10px;
@@ -137,14 +137,14 @@ pre {
         margin-top: 20px;
         padding: 30px;
     }
-    
+
     h2 {
         margin-top: 50px;
         margin-bottom: 50px;
         padding: 30px;
 
     }
-    
+
     h3 {
         font-size: 1.2em;
         margin-top: 50px;
@@ -172,14 +172,14 @@ pre {
         margin-top: 15px;
         padding: 20px;
     }
-    
+
     h2 {
         font-size: 1.3em;
         margin-top: 35px;
         margin-bottom: 35px;
         padding: 20px;
     }
-    
+
     h3 {
         font-size: 1.3em;
         margin-top: 35px;

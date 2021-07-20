@@ -1,38 +1,43 @@
-
-
 const form = document.getElementById('form')
-
 
 form.addEventListener('submit', cadastrar) 
 
-function cadastrar() {
+function cadastrar(event) {
+    event.preventDefault()
+    let botao = document.getElementById("botao");
     let nome = document.getElementById('nome').value;
-    let celular = document.getElementById('celular').value
     let email = document.getElementById('email').value;
     let data = {
         nome,
-        celular,
         email,
+    }
+
+    if (nome === "" || email === "") {
+        return alert("Todos os campos devem ser preenchidos!")
     }
     
     let convertData = JSON.stringify(data);
     localStorage.setItem('lead', convertData)
+    botao.value = "Cadastrado com sucesso!"
 }
 
-// Não consegui identificar o funcionamento do e.preventDefault()
 /*
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    let botao = document.getElementById("botao")
     let nome = document.getElementById('nome').value;
     let email = document.getElementById('email').value;
     let data = {
-        nome, 
+        nome,
         email,
     }
     
+    if (nome === "" || email === "") {
+        return alert("Todos os campos devem ser preenchidos!")
+    }
+
     let convertData = JSON.stringify(data);
-
     localStorage.setItem('lead', convertData)
-})*/
-
-
+    botao.value = "Cadastrado com sucesso!"
+})
+*/
