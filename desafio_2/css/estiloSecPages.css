@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    text-align: justify;
+    width: 90vw;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    text-shadow: rgb(44, 36, 36) 3px 3px 2px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.botao {
+    box-shadow: 4px 4px 3px black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(12, 122, 247);
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: 100px;
+    margin: auto;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    transition: 0.5s;
+    width: 100px;
+}
+
+.clientes {
+    display: flex;
+    flex-direction: column;
+}
+
+.dadosPessoais {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dadosEndereço {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos {
+display: flex;
+flex-direction: column;
+}
+
+.dadosProdutos {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisas {
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisaClientes {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisaProdutos {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 600px;
+    margin: 10px;
+}
+
+.botaoCadastro {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12;
+    }
+
+    h1 {
+        color: white;
+        font-size: 16px;
+        text-shadow: rgb(44, 36, 36) 3px 3px 2px;
+    }
+
+    h2 {
+        color: white;
+        font-size: 14px;
+        text-shadow: rgb(44, 36, 36) 3px 3px 2px;
+    }
+
+    .sectionContainer {
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1.5fr 4.5fr;
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    .footerContainer {
+        margin-top: 40px;
+        height: 40px;
+        font-size: 12px;
+        bottom: 0;
+    }
+
+    #rdev {
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .dadosPessoais {
+        margin-left: 15px;
+    }
+    
+    .dadosEndereço {
+        margin-left: 15px;
+    }
+}

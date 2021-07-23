@@ -1,0 +1,20 @@
+{
+  "name": "pergunta-resposta-node-learn",
+  "version": "1.0.0",
+  "description": "pct para estudo do nodejs",
+  "main": "app.js",
+  "dependencies": {
+    "query-string": "^7.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pergunta",
+    "resposta",
+    "nodejs"
+  ],
+  "author": "RV",
+  "license": "ISC"
+}

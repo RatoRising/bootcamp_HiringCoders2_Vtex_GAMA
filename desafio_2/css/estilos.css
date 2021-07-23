@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to top, #4692b3, #6fcdf5);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+h1 {
+    color: white;
+    font-size: 1.8em;
+    text-shadow: rgb(44, 36, 36) 3px 3px 2px;
+}
+
+h2 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-shadow: black 3px 3px 2px;
+}
+
+.headerContainer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 122, 247);
+    border-bottom: 1px solid #000;
+    box-shadow: 0 2px 5px white;
+    flex-wrap: wrap;
+}
+
+.sectionContainer {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+/* NAVEGAÇÃO*/
+.menu {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 4fr;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-right: 1px solid white;
+    height: 90%;
+}
+
+nav {
+    text-align: center;
+}
+
+.botao {
+    box-shadow: 4px 4px 3px black;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(12, 122, 247);
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: 100px;
+    margin: auto;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    transition: 0.5s;
+    width: 100px;
+}
+
+#iframe {
+    height: 95%;
+    width: 99%;
+    margin: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+footer {
+    color: white;
+}
+
+.footerContainer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+#rdev {
+    height: 40px;
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12;
+    }
+
+    h1 {
+        color: white;
+        font-size: 16px;
+        text-shadow: rgb(44, 36, 36) 3px 3px 2px;
+    }
+
+    h2 {
+        color: white;
+        font-size: 14px;
+        text-shadow: rgb(44, 36, 36) 3px 3px 2px;
+    }
+
+    .sectionContainer {
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1.5fr 4.5fr;
+    }
+
+    #iframe {
+        height: 100%;
+        width: 90%;
+        margin: 5px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    .footerContainer {
+        margin-top: 40px;
+        height: 40px;
+        font-size: 12px;
+        bottom: 0;
+    }
+
+    #rdev {
+        height: 20px;
+        margin-left: 10px;
+    }
+
+}
