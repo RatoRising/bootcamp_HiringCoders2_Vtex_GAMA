@@ -7,10 +7,10 @@ botaoClientes.addEventListener('click', clienteArea)
 botaoProdutos.addEventListener('click', produtoArea)
 
 function clienteArea() {
-    iframe.src = `/desafio_2/pages/clientes.html`
+    iframe.src = `clientes.html`
 }
 
 function produtoArea() {
-    iframe.src = `/desafio_2/pages/produtos.html`
+    iframe.src = `produtos.html`
 }
 
