@@ -78,11 +78,11 @@ nav {
 }
 
 #iframe {
-    height: 95%;
+    height: 100%;
     width: 99%;
-    margin: 5px;
-    padding: 10px;
-    overflow: hidden;
+
+    padding: 3%;
+
 }
 
 footer {

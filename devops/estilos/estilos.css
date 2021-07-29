@@ -7,33 +7,33 @@
     padding: 0;
 }
 
-main {
+body {
     background-color: #6BD163;
     color: black;
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
     line-height: 1.3em;
-    text-align: justify;
-    padding: 10px;
-    max-width: 1000px;
     margin: auto;
-}
-
-body {
-    background-color: #6BD163;
-
+    margin-bottom: 100px;
+    padding: 20px;
+    text-align: justify;
+    width: 1000px;
 }
 
 p {
     margin: 15px;
+
 }
 
 h1 {
     background-color: #8C52E5;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
     padding: 30px;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -41,25 +41,10 @@ h2 {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     color: #8C52E5;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 30px;
     text-align: center;
     text-transform: uppercase;
-}
-
-h3 {
-    background-color: black;
-    color: white;
-    font-size: 1.2em;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding: 15px;
-    text-transform: uppercase;
-}
-
-.menuSticky {
-    position: sticky;
-    top: 0;
 }
 
 a::selection,
@@ -69,21 +54,28 @@ li::selection {
     color: white;
 }
 
-h1::selection,
+h1::selection {
+    background: black;
+    color: white;
+}
+
 h2::selection {
     background: black;
     color: white;
 }
 
-h3::selection,
-h4::selection {
-    background: #8C52E5;
-    color: white;
-}
-
 li {
     margin: 10px;
-    margin-left: 40px;
+    margin-left: 50px;
+}
+
+li:hover {
+    color: #8C52E5;
+    transition: .5s;
+}
+
+.interline {
+    margin-left: 20px;
 }
 
 a {
@@ -96,33 +88,66 @@ a:hover {
     transition: .5s;
 }
 
-li:hover {
-    color: #8C52E5;
-    transition: .5s;
-}
+@media (max-width: 1005px) {
+    body {
+        font-size: 16px;
+        line-height: 1.2em;
+        padding: 10px;
+        width: 95vw;
+    }
 
-/* Classe criada para inserir quando as atividades de um tópico estiverem todas concluídas */
-
-.concluído {
-    color: white;
-}
-
-.concluído li:hover {
-    color: #8C52E5;
-    transition: .5s;
-}
-
-
-@media (max-width: 750px) {
     h1 {
-        font-size: 1.6em;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        padding: 30px;
+    }
+
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 30px;
+
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 }
 
+@media (max-width: 800px) {
+    body {
+        font-size: 14px;
+        line-height: 1.2em;
+        padding: 10px;
+        width: 95vw;
+    }
 
-@media (max-width: 600px) {
-    main {
-        font-size: 13px;
+    h1 {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+        margin-top: 15px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 12px;
         line-height: 1.2em;
         padding: 10px;
         width: 100vw;
@@ -152,10 +177,5 @@ li:hover {
     li {
         margin: 5px;
         margin-left: 25px;
-    }
-
-    .stickyResp {
-        position: sticky;
-        top: 0;
     }
 }
