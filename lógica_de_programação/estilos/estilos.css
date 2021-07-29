@@ -9,15 +9,13 @@
 
 body {
     background-color: #6BD163;
-    color: black;
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
     line-height: 1.3em;
+    max-width: 1000px;
     margin: auto;
-    margin-bottom: 100px;
-    padding: 20px;
+    padding: 10px;
     text-align: justify;
-    width: 1000px;
+    margin-bottom: 100px;
 }
 
 p {
@@ -29,24 +27,48 @@ h1 {
     background-color: #8C52E5;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     color: white;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    padding: 30px;
-    text-align: center;
+    padding: 20px;
     text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3em;
 }
 
 h2 {
     background-color: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     color: #8C52E5;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 30px;
+    line-height: 1em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
     text-align: center;
     text-transform: uppercase;
+    line-height: 1.3em;
 }
 
+h3 {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1em;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.3em;
+}
+
+h4 {
+    margin-left: 20px;
+}
+
+h4::selection {
+    background: rgb(50, 200, 250);
+
+}
+
+strong::selection,
 a::selection,
 p::selection,
 li::selection {
@@ -64,14 +86,27 @@ h2::selection {
     color: white;
 }
 
-li {
-    margin: 10px;
-    margin-left: 50px;
+h3::selection {
+    background: #8C52E5;
+    color: white;
 }
 
-li:hover {
-    color: #8C52E5;
-    transition: .5s;
+ul {
+    margin: 10px;
+    margin-left: 40px;
+}
+
+.mainli {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+li {
+    margin: 10px;
+}
+
+.subli {
+    margin-left: 15px;
 }
 
 a {
@@ -84,94 +119,33 @@ a:hover {
     transition: .5s;
 }
 
-@media (max-width: 1005px) {
-    body {
-        font-size: 16px;
-        line-height: 1.2em;
-        padding: 10px;
-        width: 95vw;
-    }
-
-    h1 {
-        margin-bottom: 30px;
-        margin-top: 20px;
-        padding: 30px;
-    }
-
-    h2 {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 30px;
-
-    }
-
-    h3 {
-        font-size: 1.2em;
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
+pre {
+    color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     body {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.2em;
-        padding: 10px;
-        width: 95vw;
-    }
-
-    h1 {
-        font-size: 1.3em;
-        margin-bottom: 20px;
-        margin-top: 15px;
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 1.3em;
-        margin-top: 35px;
-        margin-bottom: 35px;
-        padding: 20px;
-    }
-
-    h3 {
-        font-size: 1.3em;
-        margin-top: 35px;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 500px) {
-    body {
-        font-size: 12px;
-        line-height: 1.2em;
-        padding: 10px;
         width: 100vw;
     }
 
-    h1 {
-        font-size: 1em;
-        margin-bottom: 15px;
-        margin-top: 10px;
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1em;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        padding: 15px;
-    }
-
     h3 {
-        font-size: 1em;
-        margin-top: 25px;
-        margin-bottom: 15px;
-        padding: 10px;
+        text-align: center;
+        line-height: 1.5;
     }
 
-    li {
-        margin: 5px;
-        margin-left: 25px;
+    h4 {
+        margin-left: 15px;
+    }
+
+    ul {
+        margin: 10px;
+        margin-left: 15px;
+    }
+    
+    .stickyResp {
+        position: sticky;
+        top: 0;
     }
 }

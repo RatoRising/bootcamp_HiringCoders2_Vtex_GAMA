@@ -7,42 +7,39 @@
     padding: 0;
 }
 
-main {
-    background-color: #6BD163;
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    line-height: 1.3em;
-    text-align: justify;
-    padding: 10px;
-    max-width: 1000px;
-    margin: auto;
-}
-
 body {
     background-color: #6BD163;
-
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.3em;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    text-align: justify;
 }
 
 p {
     margin: 15px;
+
 }
 
 h1 {
     background-color: #8C52E5;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     color: white;
-    padding: 30px;
+    padding: 20px;
     text-transform: uppercase;
     text-align: center;
+    line-height: 1em;
 }
 
 h2 {
     background-color: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     color: #8C52E5;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    padding: 30px;
+    line-height: 1em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -51,9 +48,10 @@ h3 {
     background-color: black;
     color: white;
     font-size: 1.2em;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding: 15px;
+    line-height: 1em;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    padding: 10px;
     text-transform: uppercase;
 }
 
@@ -86,6 +84,11 @@ li {
     margin-left: 40px;
 }
 
+li:hover {
+    color: #8C52E5;
+    transition: .5s;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -96,13 +99,7 @@ a:hover {
     transition: .5s;
 }
 
-li:hover {
-    color: #8C52E5;
-    transition: .5s;
-}
-
 /* Classe criada para inserir quando as atividades de um tópico estiverem todas concluídas */
-
 .concluído {
     color: white;
 }
@@ -112,50 +109,24 @@ li:hover {
     transition: .5s;
 }
 
-
-@media (max-width: 750px) {
-    h1 {
-        font-size: 1.6em;
-    }
-}
-
-
 @media (max-width: 600px) {
-    main {
+    body {
         font-size: 13px;
         line-height: 1.2em;
-        padding: 10px;
         width: 100vw;
     }
 
-    h1 {
-        font-size: 1em;
-        margin-bottom: 15px;
-        margin-top: 10px;
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1em;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        padding: 15px;
-    }
-
-    h3 {
-        font-size: 1em;
-        margin-top: 25px;
-        margin-bottom: 15px;
-        padding: 10px;
-    }
-
     li {
-        margin: 5px;
-        margin-left: 25px;
+        margin: 10px;
+        margin-left: 30px;
     }
 
     .stickyResp {
         position: sticky;
         top: 0;
     }
+}
+
+#theEnd {
+    margin-top: 100px;
 }
