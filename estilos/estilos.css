@@ -37,11 +37,31 @@ h2 {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     color: #8C52E5;
     line-height: 1em;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu button {
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    color: #8C52E5;
+    line-height: 1em;
+    margin-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
     text-align: center;
     text-transform: uppercase;
+    border: none;
+    z-index: 1;
 }
 
 h3 {
@@ -58,6 +78,7 @@ h3 {
 .menuSticky {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 a::selection,
@@ -124,9 +145,19 @@ a:hover {
     .stickyResp {
         position: sticky;
         top: 0;
+        z-index: 1;
     }
 }
 
 #theEnd {
-    margin-top: 100px;
+    margin-top: 20px;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+}
+
