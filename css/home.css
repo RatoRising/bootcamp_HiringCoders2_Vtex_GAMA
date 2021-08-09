@@ -120,6 +120,13 @@ a:hover {
     transition: .5s;
 }
 
+.footerContainer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
 /* Classe criada para inserir quando as atividades de um tópico estiverem todas concluídas */
 .concluído {
     color: white;

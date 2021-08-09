@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Básico</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="../css/secpages.css">
     <style>
         input {
             border: 1px solid black;
@@ -14,10 +14,21 @@
             height: 30px;
             width: 200px;
         }
+
         button {
             box-shadow: 2px 2px 2px #8C52E5;
             height: 30px;
             width: 120px;
+        }
+
+        #lista {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #toDoContainer {
+            margin-left: 200px;
         }
     </style>
 </head>
@@ -25,10 +36,14 @@
 <body>
     <h1>To do List</h1>
 
-        <form action="" class="container" id="form" data-new-list-form>
-            <input data-new-list-input type="text" id="input">
-            <button id="add">Adicionar Item</button>
-        </form>
+        <div id="lista">
+            <div>
+                <form action="" class="container" id="form" data-new-list-form>
+                    <input data-new-list-input type="text" id="input">
+                    <button id="add">Adicionar Item</button>
+                </form>
+            </div>
+        </div>
         <div class="to-dos" id="toDoContainer" data-lists></div>
 
     <script src="script.js"></script>
