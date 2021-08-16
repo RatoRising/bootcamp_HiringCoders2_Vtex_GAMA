@@ -132,6 +132,10 @@ a:hover {
     color: white;
 }
 
+.linkgama {
+    color: black;
+}
+
 .concluído li:hover {
     color: #8C52E5;
     transition: .5s;
